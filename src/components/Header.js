@@ -6,16 +6,13 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
   const cartItems = useSelector((store) => store.cart.items);
 
-  const handleSignup = () => {
-    // Redirect to backend signup page
-    window.location.href = "http://localhost:3000/signup";
-  };
+const handleSignup = () => {
+  window.location.href = `${process.env.REACT_APP_BACKEND_URL}signup`;
+};
 
-  const handleLogin = () => {
-    // Redirect to backend login page
-    window.location.href = "http://localhost:3000/login";
-  };
-
+const handleLogin = () => {
+  window.location.href = `${process.env.REACT_APP_BACKEND_URL}login`;
+};
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center shadow-md pr-1 sm:pr-4 md:pr-5 bg-green-50">
@@ -33,7 +30,9 @@ const Header = () => {
           <li className="flex px-1 md:px-4 hover:bg-green-300 rounded-lg">
             <Link to="/">Home</Link>
           </li>
-
+          <li className="flex px-1 md:px-4 hover:bg-green-300 rounded-lg">
+            <Link to="/about">About</Link>
+          </li>
           <li
             className="flex px-1 md:px-4 hover:bg-green-300 rounded-lg cursor-pointer"
             onClick={handleSignup}

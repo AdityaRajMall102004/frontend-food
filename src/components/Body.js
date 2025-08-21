@@ -15,12 +15,10 @@ const Body = ()=>{
 
     const fetchData = async () => {
   try {
-    // 🔹 Call your backend proxy instead of Swiggy directly
-    const res = await fetch("http://localhost:3000/api/restaurants");
+    const res = await fetch("https://authenfor-project.onrender.com/api/restaurants");
     const json = await res.json();
     console.log(json);
 
-    // 🔹 Extract restaurants safely using optional chaining
     const restaurants =
       json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
 
