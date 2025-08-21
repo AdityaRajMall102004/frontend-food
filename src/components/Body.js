@@ -18,7 +18,6 @@ const Body = ()=>{
       const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}api/restaurants`);
     const json = await res.json();
     console.log(json);
-
     const restaurants =
       json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
 

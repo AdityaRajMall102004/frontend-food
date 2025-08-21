@@ -8,8 +8,7 @@
     "test": "jest"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shivangimall/namaste-react.git"
+    "type": "git"
   },
   "keywords": [
     "react",
@@ -17,13 +16,10 @@
   ],
   "author": "Aditya Raj Mall",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shivangimall/namaste-react/issues"
-  },
-  "homepage": "https://github.com/shivangimall/namaste-react#readme",
+ 
   "devDependencies": {
     "buffer": "^6.0.3",
-    "parcel": "^2.9.3",
+    "parcel": "^2.15.4",
     "postcss": "^8.4.31",
     "process": "^0.11.10",
     "tailwindcss": "^3.3.5"

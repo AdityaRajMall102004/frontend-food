@@ -39,7 +39,6 @@ const CartItemList = ({ items }) => {
               {item.card.info.description}
             </p>
           </div>
-
           <div className="w-5/12 sm:w-4/12 md:w-4/12 p-1 md:p-4 relative">
             {/* ✅ Quantity badge */}
             {item.quantity > 1 && (

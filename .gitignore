@@ -2,4 +2,3 @@
 /dist
 /.parcel-cache
 .env
-src/utils/constant.js

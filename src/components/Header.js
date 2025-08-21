@@ -1,6 +1,9 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
 import { LOGO_URL } from "../utils/constant";
+
+// Correct (if file is constants.js)
 import useOnlineStatus from "../utils/useOnlineStatus";
 const Header = () => {
   const onlineStatus = useOnlineStatus();
@@ -23,6 +26,7 @@ const handleLogin = () => {
             src={LOGO_URL}
           />
         </a>
+        
         <h1 className="flex font-bold h-20 items-center px-2 text-sm sm:text-xl md:text-2xl text-gray-700">
           Hunger End's Here...
         </h1>
