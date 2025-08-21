@@ -1,6 +1,7 @@
 /node_modules
 /dist
 /.parcel-cache
+.vercel
 .env
 .postcssrc
 tailwind.config.js
