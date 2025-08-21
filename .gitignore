@@ -2,3 +2,5 @@
 /dist
 /.parcel-cache
 .env
+.postcssrc
+tailwind.config.js
