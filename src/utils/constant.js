@@ -1,5 +1,4 @@
-export const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
-export const LOGO_URL = "https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png";
-
-export const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.940316246840233&lng=77.61764176240871&restaurantId=";
+export const CDN_URL = process.env.REACT_APP_CDN_URL;
+export const LOGO_URL = process.env.REACT_APP_LOGO_URL;
+export const MENU_API = process.env.REACT_APP_MENU_API;
