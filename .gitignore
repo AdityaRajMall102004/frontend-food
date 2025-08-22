@@ -3,5 +3,4 @@
 /.parcel-cache
 .vercel
 .env
-.postcssrc
-tailwind.config.js
+
