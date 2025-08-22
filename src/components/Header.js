@@ -19,7 +19,7 @@ const Header = () => {
       // ✅ MODIFICATION 3: Added a try...catch block for robust error handling
       try {
         const res = await fetch(
-          `${process.env.REACT_APP_BACKEND_URL}api/session`,
+          `${process.env.REACT_APP_BACKEND_URL}/api/session`,
           {
             credentials: "include", // This is VITAL for sending the session cookie
           }
@@ -51,17 +51,17 @@ const Header = () => {
   }, []); // Empty dependency array means this runs once on component mount
 
   const handleSignup = () => {
-    window.location.href = `${process.env.REACT_APP_BACKEND_URL}signup`;
+    window.location.href = `${process.env.REACT_APP_BACKEND_URL}/signup`;
   };
 
   const handleLogin = () => {
-    window.location.href = `${process.env.REACT_APP_BACKEND_URL}login`;
+    window.location.href = `${process.env.REACT_APP_BACKEND_URL}/login`;
   };
 
   const handleLogout = () => {
     const form = document.createElement('form');
     form.method = 'POST';
-    form.action = `${process.env.REACT_APP_BACKEND_URL}logout`;
+    form.action = `${process.env.REACT_APP_BACKEND_URL}/logout`;
     document.body.appendChild(form);
     form.submit();
   };
