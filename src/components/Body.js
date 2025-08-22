@@ -15,7 +15,7 @@ const Body = ()=>{
 
     const fetchData = async () => {
   try {
-    const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}api/restaurants`);
+    const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/restaurants`);
     const json = await res.json();
     console.log(json);
     const restaurants =
